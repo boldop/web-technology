@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner</title>
+    <style>
+.dark-mode{
+    background-color: yellow;
+    background-color: green;
+    background-color: blue;
+    color: white;
+}
+    </style>
+</head>
+<body class ="dark-mode">
+    <!-- <h1>Getting Started with Listner</h1> -->
+    <h1>Toogle function</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, veritatis corporis! Ut nihil hic itaque ex excepturi assumenda ad soluta praesentium modi quam voluptatum architecto repudiandae, iusto cupiditate eaque magnam.</p>
+    <button onclick="myFunction()">Click me!</button>
+    <script>
+        function myFunction(){
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        //document.write("<h1>ma mai ho sakdaina ne pheri</h1>");
+        }
+    </script>
+</body>
+</html>

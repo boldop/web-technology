@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikesh Maharjan - Junior Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9d255e2b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="conatiner">
+      <nav>
+        <img src="logo.PNG" class="logo">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About me</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+        <div class="header-text">
+          <p>Junior Designer</p>
+          <h1>HI, I'm <span>Bikesh</span><br>from Kathmandu.</h1>
+        </div>
+    </div>
+  </div>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+        <img src="images/user.png">
+    </div>
+    <div class="about-col-2">
+      <h1 class="sub-title">About Me</h1>
+      <p>Hi it's me Bikesh Maharjan from kathmandu.</p>
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>  
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span>Designing App</span><br>AutoCad ,Sw-Road.</li>
+          <li><span>programming language</span><br>C++,java,python.</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="experience">
+        <ul>
+          <li><span>Designing App</span><br>I have been working for 9 months in Malla group engineering associates pvt ltd.</li>
+          <li><span>programming language</span><br>i have been coding since 1 year</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="education">
+        <ul>
+          <li><span>+2</span><br>I have completed my +2 education from south western state college.</li>
+          <li><span>Bachelor</span><br>Currently Studying at Level 4.</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+     <div>
+      <i class="fas fa-code"></i>
+      <h2>Web Design</h2>
+      <p>
+        I can design a simple website.
+      </p>
+      <a href="#">Learn more</a>
+     </div>
+     <div>
+      <i class="fas fa-crop-alt"></i>
+      <h2>Road Design</h2>
+      <p>
+        Currently I'm working as Junior Road Designer in have a basic knowledge of Road designing.
+      </p>
+      <a href="#">Learn more</a>
+     </div>
+    </div>
+  </div>
+</div>
+<div id="portfolio">
+<div class="container">
+  <h1 class="sub-title">My portfolio</h1>
+  <h2>Bhojpur Road design</h2>
+  <div class="work-list">
+    <div class="work">
+      <img src="images/w1.PNG">
+      <div class="layer">
+        <h3>Bhojpur Road design in AutoCad</h3>
+        <p>This is the Bhojpur Road design which is designed using AutoCad</p>
+      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+    <div class="work">
+      <img src="images/w2.PNG">
+      <div class="layer">
+        <h3>Bhojpur Road design in SWRoad</h3>
+        <p>This is the Bhojpur Road design profile which is designed using SWRoad</p>
+      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+    <div class="work">
+      <img src="images/w3.png">
+      <div class="layer">
+        <h3>Bhojpur Road design profile</h3>
+        <p>This is the Bhojpur Road design profile which is designed using SWRoad</p>
+      <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+  </div>
+<a href="#" class="btn">See more</a>
+</div>
+</div>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p>bikimhrzn76@gmail.com</p>
+      <p>9841246229</p>
+      <div class="social-icons">
+       <a href=""><i class="fa-brands fa-facebook"></i></a>
+       <a href=""><i class="fa-brands fa-instagram"></i></a>
+       <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+  </div>
+  <div class="contact-right"></div>
+</div>
+</div>
+</div>
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+     
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <footer>
+    Copyright &copy;2023 - All right reserved. 
+  </footer>
+</body>
+</html>
